@@ -1,1 +1,0 @@
-(ns functional-quizzes.core)
