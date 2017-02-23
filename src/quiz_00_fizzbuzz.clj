@@ -39,5 +39,3 @@
   (is (= "buzz" (fizz-buzz 10)))
   (is (= "fizzbuzz" (fizz-buzz 45))))
 
-(factorial-2 10000N)
-
