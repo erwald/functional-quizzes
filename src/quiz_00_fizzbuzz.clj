@@ -26,13 +26,15 @@
 (fizz-buzz 45)
 
 ;; We can use the built-in clojure.test library to write unit tests. In order to 
-;; run the tests, start the REPL, load this file and type:
+;; run the tests, start the REPL ("Run with REPL" in Nightcode), load this file 
+;; (Nightcode: "Reload File") and type:
 ;;
+;;    (in-ns 'quiz-00-fizzbuzz) ; switch to namespace, required only once
 ;;    (run-tests)
 ;;
 ;; The most important thing to see here is the "is" expression, which we can use
-;; to make assertions (here testing that (factorial 0) returns 1 and that
-;; (factorial 5) returns 120).
+;; to make assertions (in this case, testing that `(fizz-buzz 9)` returns "fizz",
+;; for instance).
 (deftest fizz-buzz-test
   (is (= 4 (fizz-buzz 4)))
   (is (= "fizz" (fizz-buzz 9)))
