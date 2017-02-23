@@ -21,8 +21,12 @@
     (factorial-acc x 1)))
 
 ;; We can, of course, simplify our factorial implementation dramatically
-;; by using one of the built-in recursion functions - in this case,
-;; §
+;; by using one of the built-in recursion patterns - in this case,
+;; `reduce`.
 (defn factorial-3 [x]
   (reduce * (range 1 (+ x 1))))
 
+;; Example calls
+(factorial-1 4)
+(factorial-2 4)
+(factorial-3 4)

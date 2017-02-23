@@ -19,13 +19,13 @@
 (defn fizz-buzz-2 [n]
   (let [divisible-by-3? (= (mod n 3) 0)
         divisible-by-5? (= (mod n 5) 0)]
-    (if (and divisible-by-3? divisible-by-5?
+    (if (and divisible-by-3? divisible-by-5?)
          "fizzbuzz"
          (if divisible-by-3?
            "fizz"
            (if divisible-by-5?
              "buzz"
-             n))))))
+             n)))))
 
 ;; In this last variant, we reduce clutter even further by using
 ;; `cond`. This lets us write code that is more similar to the
@@ -39,4 +39,7 @@
       divisible-by-5? "buzz"
       :else n)))
 
+(fizz-buzz-1 15)
+(fizz-buzz-2 15)
+(fizz-buzz-3 15)
 
