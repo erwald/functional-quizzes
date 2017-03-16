@@ -17,7 +17,7 @@
 (sum [1 -2 3 -5 7 -11])
 
 ;; Tests
-(deftest factorial-test
+(deftest sum-test
   (is (= 0 (sum [0])))
   (is (= 2 (sum [1 1])))
   (is (= -2 (sum [-1 -1])))
