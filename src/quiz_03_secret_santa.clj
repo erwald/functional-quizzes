@@ -17,8 +17,6 @@
 ;; * No person should be assinged a santa from their own family (i.e. with their own
 ;;   surname).
 ;; * The result should be non-deterministic.
-;;
-;; Useful information here includes ...
 (defn pick-secret-santa
   "Returns a vector of vector-pairs of people. The first person in each pair is the
   giver and the second person in each pair the receiver of a gift."
