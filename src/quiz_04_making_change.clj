@@ -21,6 +21,8 @@
 ;; As a first step, you can create a greedy algorithm that always picks the
 ;; largest coin until the sum exceeds the amount. Then you can think about also
 ;; making the algorithm work for the imaginary currency.
+;;
+;; TIP: you might find the `map` and `repeat` functions useful here.
 (defn make-change [amount coins]
   [])
 
