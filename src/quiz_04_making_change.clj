@@ -35,10 +35,10 @@
 
 ;; Tests
 (deftest making-change-test
-  (is (= [[50]] (make-change 50 euro-coins)))
-  (is (= [euro-coins] (make-change 88 euro-coins)))
-  (is (= [[50 20 2 1]] (make-change 73 euro-coins)))
-  (is (= [[10 10]] (make-change 20 imaginary-coins)))
-  (is (= [[7 7]] (make-change 14 imaginary-coins))))
+  (is (= [50] (make-change 50 euro-coins)))
+  (is (= euro-coins (make-change 88 euro-coins)))
+  (is (= [50 20 2 1] (make-change 73 euro-coins)))
+  (is (= [10 10] (make-change 20 imaginary-coins)))
+  (is (= [7 7] (make-change 14 imaginary-coins))))
 
 ;; Based on http://rubyquiz.com/quiz154.html
