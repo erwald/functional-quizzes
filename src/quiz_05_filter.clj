@@ -8,7 +8,7 @@
 ;; list and returns a new list of those elements for which the given function
 ;; returned true.
 (defn futu-filter [func x]
-  (filter func x))
+  x)
 
 ;; Example calls
 (futu-filter odd? [])
