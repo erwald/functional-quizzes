@@ -10,17 +10,19 @@
 ;; with the equals function (iow `(group-by-comparator = [1 2 1 2])`) would
 ;; return:
 ;;
-;;    [[1 1] [2 2]]
-(defn group-by-comparator [func list]
+;;    ((1 1) (2 2))
+;;
+;; Hint: Use the `reduce` and `map` functions.
+(defn group-by-comparator [comparator list]
   list)
 
 ;; Example calls
 (group-by-comparator = [])
 (group-by-comparator = [1 2 1 2])
-(group-by-comparator = [1 1 2 3 3]))
+(group-by-comparator = [1 1 2 3 3])
 
 ;; Tests
 (deftest sum-test
-  (is (= [[]] (group-by-comparator = [])))
-  (is (= [[1 1] [2 2]] (group-by-comparator = [1 2 1 2])))
-  (is (= [[1 1] [2] [3 3]] (group-by-comparator = [1 1 2 3 3]))))
+  (is (= (()) (group-by-comparator = [])))
+  (is (= ((1 1) (2 2)) (group-by-comparator = [1 2 1 2])))
+  (is (= ((1 1) (2) (3 3)) (group-by-comparator = [1 1 2 3 3]))))
