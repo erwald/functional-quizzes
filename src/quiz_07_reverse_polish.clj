@@ -1,4 +1,4 @@
-(ns quiz-06-reverse-polish
+(ns quiz-07-reverse-polish
   (:require [clojure.test :refer :all]))
 
 ;; This function performs Reverse Polish notation calculations. It takes a list
