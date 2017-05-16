@@ -33,3 +33,8 @@
   (is (= 1 (second (fibs))))
   (is (= '(0 1 1 2 3 5 8 13 21 34) (take 10 (fibs))))
   (is (= 6765 (nth (fibs) 20))))
+
+;; As usual, in order to run the tests, start the REPL, load this file and type:
+;;
+;;    (run-tests)
+;;
